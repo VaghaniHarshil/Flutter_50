@@ -13,6 +13,7 @@ class _LearnState extends State<Learn> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xffedf2f4),
+        centerTitle: true,
         title: const Text("Learn"),
       ),
       body: SafeArea(
