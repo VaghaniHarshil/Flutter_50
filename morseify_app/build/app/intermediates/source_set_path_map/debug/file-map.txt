@@ -1,9 +1,9 @@
-com.example.morseify_app-jetified-window-1.0.0-beta04-0 C:\Users\harsh\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\res
-com.example.morseify_app-jetified-annotation-experimental-1.3.0-1 C:\Users\harsh\.gradle\caches\transforms-3\761929e091d544d9e6394773eda8bdee\transformed\jetified-annotation-experimental-1.3.0\res
-com.example.morseify_app-jetified-window-java-1.0.0-beta04-2 C:\Users\harsh\.gradle\caches\transforms-3\99750bb863b6fe460a7b5da8686e778d\transformed\jetified-window-java-1.0.0-beta04\res
-com.example.morseify_app-core-1.9.0-3 C:\Users\harsh\.gradle\caches\transforms-3\d9a7bda5b0a0d2fc08828ff145bfcb70\transformed\core-1.9.0\res
-com.example.morseify_app-lifecycle-runtime-2.3.1-4 C:\Users\harsh\.gradle\caches\transforms-3\db4b39695b36fb6bc4e9dc229c8d81d0\transformed\lifecycle-runtime-2.3.1\res
-com.example.morseify_app-jetified-core-ktx-1.9.0-5 C:\Users\harsh\.gradle\caches\transforms-3\e87b4eff80f5198240ea79bd63672070\transformed\jetified-core-ktx-1.9.0\res
+com.example.morseify_app-jetified-window-1.0.0-beta04-0 C:\Users\harsh\.gradle\caches\transforms-3\10d0c1c50add11c516197c7d04d6b109\transformed\jetified-window-1.0.0-beta04\res
+com.example.morseify_app-jetified-window-java-1.0.0-beta04-1 C:\Users\harsh\.gradle\caches\transforms-3\29b244dbf843c904f3423a78227340cc\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.morseify_app-jetified-annotation-experimental-1.3.0-2 C:\Users\harsh\.gradle\caches\transforms-3\3c9beaa6838c5729e46efc2751d980d0\transformed\jetified-annotation-experimental-1.3.0\res
+com.example.morseify_app-core-1.9.0-3 C:\Users\harsh\.gradle\caches\transforms-3\98b570456df1059eab49f80fc3784312\transformed\core-1.9.0\res
+com.example.morseify_app-lifecycle-runtime-2.3.1-4 C:\Users\harsh\.gradle\caches\transforms-3\c3b44a4613920ff12752fe434f36c6cc\transformed\lifecycle-runtime-2.3.1\res
+com.example.morseify_app-jetified-core-ktx-1.9.0-5 C:\Users\harsh\.gradle\caches\transforms-3\d99e72c9e66240d638b247df931a7532\transformed\jetified-core-ktx-1.9.0\res
 com.example.morseify_app-debug-6 C:\Users\harsh\Desktop\MobileDev\morseify_app\android\app\src\debug\res
 com.example.morseify_app-main-7 C:\Users\harsh\Desktop\MobileDev\morseify_app\android\app\src\main\res
 com.example.morseify_app-pngs-8 C:\Users\harsh\Desktop\MobileDev\morseify_app\build\app\generated\res\pngs\debug

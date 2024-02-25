@@ -1,6 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:morseify_app/utilities/morse.dart';
 
+class Practicetext {
+  String text;
+  bool stop;
+
+  Practicetext({
+    required this.text,
+    required this.stop,
+  });
+}
+
+List<Practicetext> practicetext = [
+  Practicetext(text: "John is a wise man.", stop: false),
+  Practicetext(text: "Jack went to the gym.", stop: false),
+  Practicetext(text: "The cat is on the table.", stop: false),
+  Practicetext(text: "I love to listen to music.", stop: false),
+  Practicetext(text: "She has a lot of friends.", stop: false),
+  Practicetext(text: "He will be late for the meeting.", stop: false),
+  Practicetext(text: "They are going to the store.", stop: false),
+];
+
 class Practicelistening extends StatefulWidget {
   const Practicelistening({super.key});
 
@@ -9,17 +29,6 @@ class Practicelistening extends StatefulWidget {
 }
 
 class _PracticelisteningState extends State<Practicelistening> {
-  final practicetext = [
-    "John is a wise man.",
-    "Jack went to the gym.",
-    "The cat is on the table.",
-    "I love to listen to music.",
-    "She has a lot of friends.",
-    "He will be late for the meeting.",
-    "They are going to the store."
-  ];
-  bool playstop = false;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,23 +52,22 @@ class _PracticelisteningState extends State<Practicelistening> {
                 child: ListTile(
                   leading: IconButton(
                     onPressed: () async {
-                      setState(() {
-                        playstop = !playstop;
-                      });
-                      if (!playstop) {
-                        playmorse(texttomorse(practicetext[i]));
-                      } else {
+                      if (practicetext[i].stop) {
+                        print("is  stopped");
                         await player.stop();
+                      } else {
+                        print("is playing");
+                        playmorse(texttomorse(practicetext[i].text));
                       }
                     },
                     icon: const Icon(Icons.play_arrow),
                   ),
                   title: Text(
-                    practicetext[i],
+                    practicetext[i].text,
                     style: const TextStyle(fontSize: 20.0),
                   ),
                   subtitle: Text(
-                    texttomorse(practicetext[i]),
+                    texttomorse(practicetext[i].text),
                     style: const TextStyle(
                         fontSize: 20.0, fontWeight: FontWeight.bold),
                   ),

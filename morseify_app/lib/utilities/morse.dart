@@ -85,3 +85,55 @@ void playmorse(String code) async {
     }
   }
 }
+
+/* bool isDisposed = false;
+@override
+void dispose(practicetext) {
+  player.stop().then((_) {
+    player.dispose();
+  });
+
+  // play icon reset
+  for (int i = 0; i < practicetext.length; i++) {
+    practicetext[i].isPlaying = false;
+  }
+
+  // chaning flag to disposed
+  isDisposed = true;
+}
+
+class MorseAudioPlayer {
+  final player = AudioPlayer();
+  static int dotDuration = 100;
+  bool isPlaying = false;
+  bool shouldstop = false;
+
+  void playmorse(String code) async {
+    isPlaying = true;
+
+    if (isPlaying) {
+      for (int i = 0; i < code.length; i++) {
+        if (shouldstop) break;
+
+        if (isDisposed) return;
+
+        if (code[i] == ".") {
+          await player.play(AssetSource("audios/Dot.mp3"));
+          await Future.delayed(Duration(milliseconds: 4 * dotDuration));
+        } else if (code[i] == "-") {
+          await player.play(AssetSource("audios/Dash.mp3"));
+          await Future.delayed(Duration(milliseconds: 5 * dotDuration));
+        } else if (code[i] == " ") {
+          await Future.delayed(Duration(milliseconds: 6 * dotDuration));
+        }
+        if 
+      }
+    }
+  }
+
+  void stopMorsePlayer() {
+    isPlaying = false;
+    player.stop();
+  }
+}
+ */
