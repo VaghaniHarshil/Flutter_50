@@ -34,7 +34,7 @@ class UpdateTab extends StatelessWidget {
           ),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
-            child: Text("Recent Updates"),
+            child: const Text("Recent Updates"),
           ),
           for (int i = 0; i < 10; ++i)
             Container(
@@ -91,30 +91,34 @@ class UpdateTab extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 180,
+            height: 200,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
                 for (int i = 0; i < 10; ++i)
                   Container(
                     width: 150.0,
-                    margin: const EdgeInsets.symmetric(horizontal: 10.0),
+                    margin: const EdgeInsets.fromLTRB(20, 10, 0, 10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(
-                        color: Color.fromARGB(255, 198, 203, 205),
+                        color: const Color.fromARGB(255, 198, 203, 205),
                       ),
                     ),
                     child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         const CircleAvatar(
-                          radius: 30,
+                          radius: 25.0,
                         ),
-                        const Text("WhatsApp"),
+                        const Text(
+                          "WhatsApp",
+                          style: TextStyle(
+                              fontSize: 16.0, fontWeight: FontWeight.w500),
+                        ),
                         TextButton(
                           style: TextButton.styleFrom(
-                            fixedSize: const Size.fromWidth(100),
+                            fixedSize: const Size.fromWidth(120),
                             backgroundColor:
                                 const Color.fromARGB(67, 85, 239, 195),
                           ),
@@ -133,10 +137,20 @@ class UpdateTab extends StatelessWidget {
             ),
           ),
           Container(
+            margin: EdgeInsets.fromLTRB(20, 20, 0, 40),
             alignment: Alignment.centerLeft,
-            child:
-                TextButton(onPressed: () {}, child: const Text("Explore More")),
-          )
+            child: TextButton(
+              style: TextButton.styleFrom(
+                fixedSize: const Size.fromWidth(120),
+                backgroundColor: const Color(0xff218c74),
+              ),
+              onPressed: () {},
+              child: const Text(
+                "Explore More",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+          ),
         ],
       ),
     );

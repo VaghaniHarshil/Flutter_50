@@ -84,6 +84,7 @@ class ChatsDisplayTab extends StatelessWidget {
                 },
                 child: CircleAvatar(
                   backgroundImage: NetworkImage(chat[i].image),
+                  radius: 25.0,
                 ),
               ),
               title: Text(chat[i].name),

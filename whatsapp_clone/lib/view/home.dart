@@ -5,6 +5,8 @@ import 'package:whatsapp_clone/widgets/home/chatdisplaytab.dart';
 import 'package:whatsapp_clone/widgets/home/updatetab.dart';
 import 'package:whatsapp_clone/widgets/home/callstab.dart';
 
+
+
 class Homeview extends StatelessWidget {
   const Homeview({super.key});
 
@@ -82,11 +84,6 @@ class Homeview extends StatelessWidget {
               CallsTab(),
             ],
           ),
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          backgroundColor: const Color(0xff10ac84),
-          child: const Icon(Icons.message, color: Colors.white),
         ),
       ),
     );
